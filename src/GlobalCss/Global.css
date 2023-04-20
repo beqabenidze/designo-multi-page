@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.backbone {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+h1 {
+  font-size: max(32px, 3vw);
+}
+p {
+  font-size: max(14px, 1vw);
+}
+.header {
+  padding: 30px 20px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-flex {
+  display: flex;
+  gap: 40px;
+  color: black;
+}
+.header a {
+  color: black;
+}
+.dark-grid {
+  display: grid;
+  place-items: center;
+  gap: 25px;
+  margin: 25px;
+  margin-top: 100px;
+}
+.dark-grid-box {
+  width: 100%;
+  position: relative;
+}
+.dark-grid img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+.dark-grid-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.dark-grid-abs h1 {
+  width: max-content;
+}
+button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  width: 150px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.touch {
+  margin: 25px;
+  border-radius: 10px;
+  padding: 40px 20px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  color: #fff;
+  background-color: #e7816b;
+}
+.touchPattern {
+  position: absolute;
+  top: 0;
+  right: 80%;
+}
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 25px 40px 25px;
+  color: rgb(182, 179, 179);
+}
+.footer-menu-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgb(83, 81, 81);
+}
+.footer-info-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+}
+.socials img {
+  cursor: pointer;
+}
+
+@media (width > 768px) {
+  .header {
+    margin: max(5px, 5vw);
+  }
+  footer {
+    padding: max(5px, 5vw);
+    padding-top: 100px;
+  }
+  footer ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: max-content;
+  }
+  .footer-menu-div {
+    flex-direction: row;
+  }
+  .footer-info-flex {
+    width: 100%;
+    text-align: initial;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .touch {
+    margin: 0 max(5px, 5vw);
+  }
+}
+@media (width > 1440px) {
+  .dark-grid {
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
+  }
+  .dark-grid-box {
+    height: 100%;
+  }
+  .dark-grid img {
+    height: 100%;
+    max-height: fit-content;
+    object-fit: cover;
+  }
+  #grid-1 {
+    grid-row: 1 / 3;
+  }
+}

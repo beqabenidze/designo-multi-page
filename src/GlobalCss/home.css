@@ -1,0 +1,83 @@
+.home {
+  width: 100%;
+}
+.frame {
+  padding: max(25px, 7vw);
+  height: 850px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  background-color: #e7816b;
+}
+.circlebig {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+.illustrations {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.illustrations-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (width > 768px) {
+  .frame {
+    margin: max(5px, 5vw);
+    border-radius: 20px;
+  }
+
+  .illustrations {
+    margin: max(5px, 5vw);
+  }
+  .illustrations-box {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .illustration-flex {
+    text-align: initial;
+  }
+  .touch {
+    margin: max(5px, 5vw);
+  }
+}
+@media (width > 1440px) {
+  .frame {
+    flex-direction: row;
+    text-align: initial;
+  }
+  .illustrations {
+    margin: max(5px, 5vw);
+    margin: 80px;
+    gap: 50px;
+    flex-direction: row;
+  }
+  .illustrations-box {
+    flex-direction: column;
+  }
+  .illustration-flex {
+    text-align: center;
+  }
+
+  .touch {
+    padding: 10px 100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .touch-flex {
+    text-align: initial;
+    width: 50%;
+  }
+}

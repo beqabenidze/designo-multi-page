@@ -1,0 +1,29 @@
+.overlay {
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 90px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.menuPop {
+  padding: max(40px, 2vw) max(20px, 5vw);
+  background-color: black;
+  width: 100%;
+  z-index: 1;
+}
+li {
+  list-style-type: none;
+  margin: max(15px, 2vw) 0px;
+  font-size: max(25px, 1vw);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+@media (width > 768px) {
+  .overlay {
+    top: calc(90px + max(25px, 7vw));
+  }
+}
